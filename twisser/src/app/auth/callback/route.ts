@@ -2,6 +2,7 @@ import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { type NextRequest, NextResponse } from 'next/server'
 
+// This is an option in Next.js to prevent a route from caching statically.
 export const dynamic = 'force-dynamic'
 
 export async function GET (request: NextRequest) {
